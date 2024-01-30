@@ -49,6 +49,21 @@ body {
   height: 80%;
   object-fit: cover;
   transition: transform 0.5s ease-in-out;
+  -webkit-transition:
+    width 2s,
+    height 2s,
+    background-color 2s,
+    -webkit-transform 2s;
+  transition:
+    width 2s,
+    height 2s,
+    background-color 2s,
+    transform 2s;
+}
+
+#modo:hover {
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .titulo {
